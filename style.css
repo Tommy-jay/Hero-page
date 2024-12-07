@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.banner{
+    width: 100;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(interior-design-room-carpets-couch-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    /* text-align: center; */
+    font-size: 1.7rem;
+    /* margin: 20px 0; */
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    /* margin: 10px auto; */
+    width: 60px;
+    height: 4px;
+}
+
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    font-weight: 100;
+    line-height: 25px;
+
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.5s;
+    
+}
+.our-services{
+    background-color: rgb(31, 23, 23);
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+.flex1{
+    display: flex;
+    padding: 50px 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 100px;
+    color: white;
+}
+.word1{
+    color: red;
+} 
+hr{
+    margin-top: 10px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    /* max-width: 200px;
+    max-height: 200px; */
+    margin-top: 30px;
+}
+
+.recent-projects{
+    padding: 30px 20px;
+    text-align: center;
+}
+.recent-projects hr{
+    width: 70px;
+    margin: auto;
+    margin-top: 10px;
+    border-top: 2px solid;
+    color: rgb(223, 223, 53);
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+   
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Overlay for the Plus Icon */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(127, 201, 43, 0.726);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+.plus-icon {
+    color: rgb(255, 255, 255);
+    font-size: 20px;   
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Link Styling */
+.more-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.our-processes{
+    padding: 10px 10px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(interior-design-room-carpets-couch-wallpaper-preview.jpg);
+    color: white;
+}
+
+.section2 {
+    margin-top: 30px;
+}
+
+.circle{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    margin: 0 auto;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    /* text-align: left; */
+    gap: 20px;
+    color: white;
+    /* height: 90%;
+    width: 90%; */
+    
+}
+
+.circle div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(32, 30, 30, 0.808);
+    /* border: 1px solid; */
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+}
+
+/* .circle div p{
+    margin-top: 100px;
+} */
+
+/* .c1{
+    background-color: rgb(32, 30, 30);
+    border: 1px solid;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content:space-evenly;
+    width: 450px;
+    height: 140px;
+    padding: 10px;
+}
+
+.c2{
+    background-color: rgb(32, 30, 30);
+    border: 1px solid;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content:space-evenly;
+    width: 450px;
+    height: 140px;
+    padding: 10px;
+    t
+    
+}
+
+.c3{
+    background-color: rgb(32, 30, 30);
+    border: 1px solid;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content:space-evenly;
+    width: 450px;
+    height: 140px;
+    padding: 10px;
+}
+.c4{
+    background-color: rgb(32, 30, 30);
+    border: 1px solid;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content:space-evenly;
+    width: 450px;
+    height: 140px;
+    padding: 10px;
+} */
+/* .circle h4{
+    margin: 5px 0;
+    font-size: 0.9em;
+
+}
+.circle p{
+    margin: 5px 0;
+    font-size: 0.8em;
+} */
+
+.section2 hr{
+    width: 70px;
+    margin: auto;
+    margin-top: 10px;
+    border-top: 2px solid;
+    color: red;
+    
+}
+/* .new-section{
+    display: flex;
+    padding: 50px 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    gap: 50px;
+}
+.image{
+    width: 25%;
+    height: 25%;
+}
+.new-section h2{
+    margin-bottom: 57%;
+    font-family: sans-serif;
+    
+}
+.text p{
+    color: black;
+} */
+.attributes{
+    display: flex;
+    padding: 50px 100px 50px 100px;
+    margin: auto;
+    gap: 100px;
+    align-items: stretch;
+    
+}
+.attributes h2{
+    margin-bottom: 50px;
+    font-size: xx-large;
+}
+.attributes p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.attributes h4{
+    margin-top: 10px;
+}
+.attributes hr{
+    opacity: 10%;
+}
+.text-c{
+    padding-top: 35px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+}
+.attributes div{
+    flex: 1;
+}
+.image-c{
+    flex: 1;
+    display: flex;
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+}
+.image-c img {
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+}
+
+.team-section {
+    padding: 40px 20px;
+    background-color: black;
+}
+.team-section h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+/* Team Image */
+.team-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.team-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-image:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team-image:hover .overlay {
+    opacity: 1;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Team Name and Role */
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
